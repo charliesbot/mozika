@@ -3,6 +3,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:import/errors",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",

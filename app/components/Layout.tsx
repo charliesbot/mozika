@@ -45,6 +45,7 @@ const Layout: React.FunctionComponent<Props> = ({
     />
     <Head>
       <title>{title}</title>
+      <link rel="manifest" href="/static/manifest.json" />
       <meta charSet="utf-8" />
       <meta
         name="viewport"

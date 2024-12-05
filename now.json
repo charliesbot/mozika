@@ -9,7 +9,7 @@
   },
   "builds": [
     {
-      "src": "app/package.json",
+      "src": "app/next.config.js",
       "use": "@now/next"
     },
     {
@@ -25,6 +25,14 @@
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
+    },
+    {
+      "src": "^/service-worker.js$",
+      "dest": "/app/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
     },
     {
       "src": "/(.*)",

@@ -7,7 +7,7 @@ export const getCenter = (node: HTMLElement) => {
 };
 
 export const distanceBetweenPoints = (point1: Point, point2: Point) => {
-  const x = Math.pow(point1.x - point2.x, 2);
-  const y = Math.pow(point1.y - point2.y, 2);
+  const x = (point1.x - point2.x) ** 2;
+  const y = (point1.y - point2.y) ** 2;
   return Math.sqrt(x + y);
 };

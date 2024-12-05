@@ -1,5 +1,4 @@
-api/node_modules
-app/node_modules
+*/node_modules
 *.vscode/*
 .mypy_cache
 .DS_Store
